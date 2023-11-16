@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Search from './Search';
+import Search from './Search.tsx';
 import axios from 'axios';
 
 const Gallery = () => {

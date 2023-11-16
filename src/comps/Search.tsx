@@ -1,5 +1,5 @@
-import CocktailCard from './CocktailCard';
-import RandomCocktail from './RandomCocktail';
+import CocktailCard from './CocktailCard.tsx';
+import RandomCocktail from './RandomCocktail.tsx';
 
 type UserInputProps = {
   userInput: string;

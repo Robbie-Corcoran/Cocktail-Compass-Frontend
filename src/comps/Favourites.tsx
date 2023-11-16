@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import CocktailCard from './CocktailCard';
+import CocktailCard from './CocktailCard.tsx';
 import axios from 'axios';
 
 const Favourites = () => {

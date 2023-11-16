@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Header from './comps/Header';
-import About from './comps/About';
-import Gallery from './comps/Gallery';
-import Favourites from './comps/Favourites';
+import Header from './comps/Header.tsx';
+import About from './comps/About.tsx';
+import Gallery from './comps/Gallery.tsx';
+import Favourites from './comps/Favourites.tsx';
 
 function App() {
   return (

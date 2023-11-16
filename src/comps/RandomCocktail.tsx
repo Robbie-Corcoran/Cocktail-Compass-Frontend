@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CocktailCard from './CocktailCard';
+import CocktailCard from './CocktailCard.tsx';
 
 type RandomProps = {
   randomResult: string[];
