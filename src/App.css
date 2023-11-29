@@ -44,7 +44,7 @@
 /* GALLERY */
 
 .result {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     margin-top: 20px;
     min-width: 320px;
@@ -127,7 +127,7 @@
 
 /* ABOUT */
 .about {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about__header {
