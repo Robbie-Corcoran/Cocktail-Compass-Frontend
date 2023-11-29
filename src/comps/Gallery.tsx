@@ -20,16 +20,16 @@ const Gallery = () => {
           setSearchResults(response.data);
           console.log(searchResults);
         }
-        const randomReponse = await axios.get(localRandomURL);
-        setRandomResult(randomReponse.data);
+        const axiosResponse = await axios.get(localRandomURL);
+        setRandomResult(axiosResponse.data);
         console.log(randomResult);
       } catch (error) {
         console.log(error);
       }
     };
-    searchCocktail();
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Void being used her to tell the linter that I'm explicitly ignoring the returned promise.
+    void searchCocktail();
   }, [localBaseURL]);
 
   return (
