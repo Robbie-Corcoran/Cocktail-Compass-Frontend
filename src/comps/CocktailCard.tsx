@@ -1,9 +1,8 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CocktailCard = ({ cocktail }: { cocktail: any }) => {
-  interface Ingredient {
+  type Ingredient = {
     measure: string;
     ingredient: string;
   }
