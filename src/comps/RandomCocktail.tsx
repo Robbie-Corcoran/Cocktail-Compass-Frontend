@@ -1,31 +1,31 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import CocktailCard from './CocktailCard.tsx';
 
 type RandomProps = {
-  randomResult: string[];
+    randomResult: string[];
 };
 
 const RandomCocktail = (props: RandomProps) => {
-  const [result, setResult] = useState<JSX.Element[]>([]);
+    const [result, setResult] = useState<JSX.Element[]>([]);
 
-  const handleRandomCocktail = () => {
-    const randomCocktails = props.randomResult.map((obj, i) => (
-      <section>
-        <CocktailCard cocktail={obj} key={i} />
-      </section>
-    ));
+    const handleRandomCocktail = () => {
+        const randomCocktails = props.randomResult.map((obj, i) => (
+            <section>
+                <CocktailCard cocktail={obj} key={i}/>
+            </section>
+        ));
 
-    setResult(randomCocktails);
-  };
+        setResult(randomCocktails);
+    };
 
-  return (
-    <>
-      <button className="button" onClick={handleRandomCocktail}>
-        RANDOM COCKTAIL
-      </button>
-      <section className="result">{result}</section>
-    </>
-  );
+    return (
+        <>
+            <button className="button" onClick={handleRandomCocktail}>
+                RANDOM COCKTAIL
+            </button>
+            <section className="result">{result}</section>
+        </>
+    );
 };
 
 export default RandomCocktail;
