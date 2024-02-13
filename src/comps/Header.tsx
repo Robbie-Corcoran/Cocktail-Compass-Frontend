@@ -10,7 +10,7 @@ const Header = () => {
         </h2>
         <img
           className="logo"
-          src={"./public/assets/Logo-white.png"}
+          src={"./assets/Logo-white.png"}
           height={250}
           alt="Cocktail Compass Logo"
         />
